@@ -8,10 +8,8 @@ while another_no == "yes" or another_no == "y" or another_no == "Y" or another_n
         count1 = 0
         count2 = 0
 
-        while (y > 0):
-            rem = y % 10
-            sum = sum * 10 + rem
-            y = y // 10
+        y = str(x)[::-1]
+        y = int(y)
 
         for i in range(2, x):
             if x % i == 0:
